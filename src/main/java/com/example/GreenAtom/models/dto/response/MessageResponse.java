@@ -56,8 +56,8 @@ public class MessageResponse {
 
     public static MessageResponse mapFromEntity(Message message) {
         return new MessageResponse(message.getId(),
-                message.getText(),
                 message.getAuthor().getUsername(),
+                message.getText(),
                 message.getCreatedDate());
     }
 }
